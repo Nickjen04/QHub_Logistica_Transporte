@@ -1,0 +1,23 @@
+﻿SCOPE,RULE,SEVERITY,STATUS,AFFECTED_ROWS,TOTAL_ROWS,PERCENTAGE,DESCRIPTION
+MES_1,MISSING_COD_IPRESS,ERROR,PASS,0,35471,0.0,COD_IPRESS vacío después de la limpieza.
+MES_1,INVALID_COD_IPRESS,ERROR,PASS,0,35471,0.0,El código no tiene ocho dígitos.
+MES_1,DUPLICATES_REMOVED,WARNING,PASS,0,35471,0.0,Filas duplicadas eliminadas conservando el registro más completo.
+MES_1,MISSING_COORDINATE_PAIR,WARNING,WARN,13147,35471,37.06408051647825,"Falta latitud, longitud o ambas."
+MES_1,COORDINATES_OUTSIDE_PERU,ERROR,FAIL,7,35471,0.01973443094358772,Par numérico fuera de los límites geográficos plausibles del Perú.
+MES_1,MISSING_SNAPSHOT_DATE,WARNING,WARN,35471,35471,100.0,No se consignó la fecha exacta del corte; se conserva el orden relativo.
+MES_2,MISSING_COD_IPRESS,ERROR,PASS,0,35581,0.0,COD_IPRESS vacío después de la limpieza.
+MES_2,INVALID_COD_IPRESS,ERROR,PASS,0,35581,0.0,El código no tiene ocho dígitos.
+MES_2,DUPLICATES_REMOVED,WARNING,PASS,0,35581,0.0,Filas duplicadas eliminadas conservando el registro más completo.
+MES_2,MISSING_COORDINATE_PAIR,WARNING,WARN,13154,35581,36.969168938478404,"Falta latitud, longitud o ambas."
+MES_2,COORDINATES_OUTSIDE_PERU,ERROR,FAIL,7,35581,0.01967342120794806,Par numérico fuera de los límites geográficos plausibles del Perú.
+MES_2,MISSING_SNAPSHOT_DATE,WARNING,WARN,35581,35581,100.0,No se consignó la fecha exacta del corte; se conserva el orden relativo.
+MES_3,MISSING_COD_IPRESS,ERROR,PASS,0,35743,0.0,COD_IPRESS vacío después de la limpieza.
+MES_3,INVALID_COD_IPRESS,ERROR,PASS,0,35743,0.0,El código no tiene ocho dígitos.
+MES_3,DUPLICATES_REMOVED,WARNING,PASS,0,35743,0.0,Filas duplicadas eliminadas conservando el registro más completo.
+MES_3,MISSING_COORDINATE_PAIR,WARNING,WARN,13168,35743,36.84078001286965,"Falta latitud, longitud o ambas."
+MES_3,COORDINATES_OUTSIDE_PERU,ERROR,FAIL,7,35743,0.0195842542595753,Par numérico fuera de los límites geográficos plausibles del Perú.
+MES_3,MISSING_SNAPSHOT_DATE,WARNING,WARN,35743,35743,100.0,No se consignó la fecha exacta del corte; se conserva el orden relativo.
+LATEST_COLCABAMBA_ACTIVE,NO_ACTIVE_TARGET_IPRESS,ERROR,PASS,0,1,0.0,El snapshot operativo debe contener al menos una IPRESS activa.
+LATEST_COLCABAMBA_ACTIVE,DUPLICATE_TARGET_CODES,ERROR,PASS,0,10,0.0,COD_IPRESS debe ser único en la muestra operativa.
+LATEST_COLCABAMBA_ACTIVE,TARGET_WITHOUT_VALID_COORDINATES,ERROR,PASS,0,10,0.0,Toda IPRESS que entre al modelo de rutas necesita coordenadas válidas.
+LATEST_COLCABAMBA_ACTIVE,DEPOT_CANDIDATE_NOT_UNIQUE,WARNING,PASS,0,1,0.0,Debe verificarse manualmente un único origen Colcabamba I-4.
